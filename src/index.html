@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/networkgraph.esm.js"></script>
+  <script type="text/javascript" src="/assets/links.js"></script>
+  <script type="text/javascript" src="/assets/nodes.js"></script>
+  <script type="text/javascript" src="/assets/links_svg.js"></script>
+  <script type="text/javascript" src="/assets/nodes_svg.js"></script>
+  <script nomodule src="/build/networkgraph.js"></script>
+
+</head>
+<body>
+
+  <div style="display:inline-block; width: 600px; margin-right: 12px;">
+    <h1 style="margin-bottom: 0px;">Interactive Network Graph on Canvas</h1>
+    <h4 style="margin-top: 0px;">D3 + Stencil</h4>
+    <network-graph></network-graph>
+  </div>
+
+  <div style="display:inline-block; width: 600px;">
+    <h1 style="margin-bottom: 0px;">Interactive Network Graph on SVG</h1>
+    <h4 style="margin-top: 0px;">D3 + Stencil</h4>
+  <network-graph-svg></network-graph-svg>
+
+  </div>
+  
+  <script>
+    networkGraphCanvas = document.getElementsByTagName("network-graph")[0];
+    networkGraphCanvas.links = links;
+    networkGraphCanvas.nodes = nodes;
+
+    networkGraphSVG = document.getElementsByTagName("network-graph-svg")[0];
+    networkGraphSVG.links = links_svg;
+    networkGraphSVG.nodes = nodes_svg;
+
+  </script>
+</body>
+</html>
