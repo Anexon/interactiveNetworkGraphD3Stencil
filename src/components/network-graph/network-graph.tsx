@@ -118,7 +118,7 @@ export class NetworkGraph implements ComponentInterface {
   draw(){
     this.context.clearRect(0, 0, this.width, this.height);
     this.context.save();
-
+       
     this.context.translate(this.transform.x, this.transform.y);
     this.context.scale(this.transform.k, this.transform.k);
 
@@ -126,7 +126,8 @@ export class NetworkGraph implements ComponentInterface {
 
     this.nodes.forEach(node=>this.drawNode(node));
 
-    this.context.stroke();
+    this.context.stroke(); 
+
     this.context.restore();
   }
 
@@ -142,7 +143,7 @@ export class NetworkGraph implements ComponentInterface {
         this.context.fillStyle = "#2980b9";
         radius = this.nodeRadiusScale(node.appearances);
       }
-      this.context.moveTo(node.x + 3, node.y);
+      this.context.moveTo(node.x, node.y);
       this.context.arc(node.x, node.y, radius, 0, 2 * Math.PI);
       
       this.context.strokeStyle = "transparent";

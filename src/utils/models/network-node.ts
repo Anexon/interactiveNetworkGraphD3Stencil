@@ -1,5 +1,5 @@
 export interface NetworkNode {
-    id: number | string;
+    id: number;
     type: NetworkNodeType;
     appearances: number;
     x?: number;
