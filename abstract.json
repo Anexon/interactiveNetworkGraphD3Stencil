@@ -1,0 +1,7 @@
+{
+    "project_name": "Gráfico de Red con D3",
+    "tags": ["Stencil", "Typescript", "D3", "Canvas", "SVG"],
+    "description": "Proyecto ejemplo de como utilizar D3 para realizar un gráfico de red en Html Canvas y SVG. Los datos son contratos de puesta disposición durante un periodo en la plataforma BuscoExtra.",
+    "live_demo_url": "",
+    "repository_url": "https://github.com/Anexon/interactiveNetworkGraphD3Stencil"
+}
