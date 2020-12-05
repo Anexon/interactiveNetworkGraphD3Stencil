@@ -5,8 +5,8 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { NetworkNode, } from "./utils/models/network-node";
-import { NetworkLink, } from "./utils/models/network-link";
+import { NetworkNode } from "./utils/models/network-node";
+import { NetworkLink } from "./utils/models/network-link";
 export namespace Components {
     interface NetworkGraph {
         "links": NetworkLink[];
